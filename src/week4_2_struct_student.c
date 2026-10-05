@@ -1,7 +1,7 @@
 /*
  * week4_2_struct_student.c
  * Author: Ismet Orbay Gursoy
- * Student ID: [Your ID]
+ * Student ID: [241ADB156]
  * Description:
  *   Demonstrates defining and using a struct in C.
  *   Define a 'Student' struct with name, id and grade, create two
