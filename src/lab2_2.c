@@ -14,7 +14,7 @@ int main(void) {
   int n;
 
   printf("Enter a non-negative integer n: ");
-  scanf("%d", &n);
+  if (scanf("%d", &n) != 1) return 1;
 
   if (n < 0) {
     printf("Error: n cannot be negative.\n");

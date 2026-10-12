@@ -33,14 +33,14 @@ int main(void) {
 
     // consume the leftover newline from previous input, if any
     int ch;
-    while ((ch = getchar()) != '\\n' && ch != EOF) { /* discard */ }
+    while ((ch = getchar()) != '\n' && ch != EOF) { /* discard */ }
 
     printf("Enter a full line (may contain spaces): ");
     if (fgets(line, sizeof(line), stdin) != NULL) {
         // remove trailing newline if present
         size_t len = strlen(line);
-        if (len > 0 && line[len - 1] == '\\n') {
-            line[len - 1] = '\\0';
+        if (len > 0 && line[len - 1] == '\n') {
+            line[len - 1] = '\0';
         }
         printf("Line: \"%s\" (length=%zu)\\n", line, strlen(line));
     } else {
